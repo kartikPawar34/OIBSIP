@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calbody">
+    <div class="display">
+      <input type="text" id="display" readonly value="0">
+    </div>
+
+    <div id="button-container" class="button-container">
+      <div class="row-1">
+        <button data-num="7">7</button>
+        <button data-num="8">8</button>
+        <button data-num="9">9</button>
+        <button data-operator="÷">÷</button>
+        <button data-action="clear">C</button>
+      </div>
+
+      <div class="row-2">
+        <button data-num="4">4</button>
+        <button data-num="5">5</button>
+        <button data-num="6">6</button>
+        <button data-operator="×">×</button>
+        <button data-action="backspace">DEL</button>
+      </div>
+
+      <div class="row-3">
+        <button data-num="1">1</button>
+        <button data-num="2">2</button>
+        <button data-num="3">3</button>
+        <button data-operator="−">−</button>
+        <button data-action="decimal">.</button>
+      </div>
+
+      <div class="row-4">
+        <button data-num="0">0</button>
+        <button data-operator="+">+</button>
+        <button data-action="equals" style="grid-column: span 3;">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
