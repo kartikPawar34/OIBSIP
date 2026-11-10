@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Mono&family=Syne:wght@700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6b0202;
+  color: #f5f5f5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem 2rem 4rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+header h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  text-transform: none;
+}
+
+header .subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  color: rgba(175, 145, 145, 0.5);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-card {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, rgba(27, 1, 1, 0.2) 0%, rgba(27, 0, 0, 0.9) 100%), url('lib/1.png');
+  background-size: cover;
+  background-position: center top;
+}
+
+.hero-text h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  margin: 0 0 0 2rem;
+}
+
+.hero-text p {
+  max-width: 480px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0 0 2rem; 
+}
+
+section {
+  padding: 6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+section h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 3rem;
+}
+
+section h2::before {
+  content: "— ";
+}
+
+.about-section p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #e0e0e0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+}
+
+.card {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  transition:ease-in 0.2s;
+}
+
+.card:hover{
+  transform:translateY(-1rem);
+  box-shadow:1rem 2rem 3rem 1rem #3801015b;
+  border-radius:1rem;
+}
+
+.card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.timeline strong {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.quotes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+blockquote {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  max-width: 850px;
+  letter-spacing: -0.02em;
+}
+
+.books-list {
+  list-style: none;
+}
+
+.books-list li {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.books-list strong {
+  color: #ffffff;
+}
+
+.honors-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.honors-card:hover{
+  transform:translateY(-1rem);
+  box-shadow:1rem 2rem 3rem 1rem #3801015b;
+  border-radius:1rem;
+}
+
+.honors-card p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.honors-card strong {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+footer {
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  header, .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
